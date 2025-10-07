@@ -73,7 +73,7 @@
   .winning {
     background-color: yellow;
     color: black;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     font-weight: 500;
   }
 
@@ -102,24 +102,35 @@
 
   .container {
     width:auto;
-    margin-right: 20ps;
+    max-width: 100%;
+    /* margin-right: 20ps; */
     grid-template-columns: repeat(5, 1fr);
     gap: 6px;
     padding: 3px;
   }
 
   .box {
-    width: 60px;
-     height: 60px;
+    width: auto;
+     height: auto;
     font-size: 10px;
     line-height: 1.1;
-    padding: 4px;
+     padding: 4px;
+     border-radius: 2px solid red;
     word-wrap: break-word;        
     white-space: normal;          
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;      
+  }
+    .highlight {
+    border: 3px solid rgb(0, 0, 0);
+  }
+    .winning {
+    background-color: yellow;
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    font-weight: 500;
   }
 
   #pick, #reset {
